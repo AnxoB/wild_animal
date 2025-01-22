@@ -5,14 +5,14 @@ function reset(){
 
 function check(){
     let name = document.getElementById("name").value
+    let answer = document.getElementById("answer")
     if (name.toLowerCase()=="lion"){
-        document.getElementById("answer").innerText = "Correct"
-        document.getElementById("answer").style.backgroundColor = "green"
-        document.getElementById("answer").style.padding = "10px"
+        answer.className = "bg-success-subtle p-3 text-black"
+        answer.innerText = "Correct"
+        
 
     } else{
-        document.getElementById("answer").innerText = "Incorrect"
-        document.getElementById("answer").style.backgroundColor = "red"
-        document.getElementById("answer").style.padding = "10px"
+        answer.className = "bg-danger p-3 text-black"
+        answer.innerText = "Incorrect"
     }
 }
